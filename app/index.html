@@ -28,10 +28,16 @@
 
     <section ng-controller="contentCtrl">
         <h1>CONTENT</h1>
-        <input ng-model="age"/>
-        <span>
-          Vous êtes <b ng-bind="majeurOrMineurText()"></b>
-        </span>
+        <div>
+          <label>Afficher le paragraphe</label>
+          <input type="checkbox" ng-model="showContent"/>
+        </div>
+        <div ng-show="showContent">
+          <input ng-model="age"/>
+          <span>
+            Vous êtes <b ng-bind="majeurOrMineurText()"></b>
+          </span>
+        </div>
     </section>
 
     <section ng-controller="footerCtrl">
