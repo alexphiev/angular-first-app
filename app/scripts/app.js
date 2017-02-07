@@ -8,5 +8,25 @@
  *
  * Main module of the application.
  */
-angular
-  .module('firstAppApp', []);
+
+
+ var myApp = angular.module('firstAppApp',[]);
+
+  myApp.controller("headerCtrl", function($scope){
+      //...
+  });
+
+  myApp.controller("menuCtrl", function($scope){
+      //...
+  });
+
+  myApp.controller("contentCtrl", function($scope){
+      $scope.age = 0;
+      $scope.majeurOrMineurText = function(){
+          return ($scope.age >= 18) ? "majeur" : "mineur";
+      };
+   });
+
+  myApp.controller("footerCtrl", function($scope){
+     //...
+  });
