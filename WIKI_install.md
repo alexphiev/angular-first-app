@@ -8,7 +8,6 @@ node -v
 npm -v
 
 # Prevent SUDO and access problems
-
 1.
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
