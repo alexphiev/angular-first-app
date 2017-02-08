@@ -20,6 +20,7 @@
 
     <section ng-controller="headerCtrl">
         <h1>HEADER</h1>
+        <span>{{'1992-08-12' | date: 'dd MMM yyyy'}}</span>
     </section>
 
     <section ng-controller="menuCtrl">
@@ -64,6 +65,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
