@@ -24,6 +24,11 @@
 
     <section ng-controller="menuCtrl">
         <h1>MENU</h1>
+        <accordion>
+          <expander class="expander" expander-title="expander.title" ng-repeat="expander in expanders">
+            {{expander.text}}
+          </expander>
+        </accordion>
     </section>
 
     <section ng-controller="contentCtrl">
